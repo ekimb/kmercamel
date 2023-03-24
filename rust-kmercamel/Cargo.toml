@@ -14,7 +14,7 @@ structopt = "0.3.1"
 array_tool = "1.0.3"
 closure = "0.3.0"
 libc = "0.2.77"
-seq_io= { git = "https://github.com/markschl/seq_io" }
+#seq_io= { git = "https://github.com/markschl/seq_io" }
 lzzzz = "0.7"
 xx-bloomfilter = "0.10.0"
 flate2 = "1.0.6"
