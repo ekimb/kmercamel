@@ -1,0 +1,33 @@
+[package]
+name = "rust-kmercamel"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+phf = { version = "0.11", features = ["macros"] }
+dashmap = "5.4.0"
+bio = "1.1.0"
+fasthash = "0.4.0"
+structopt = "0.3.1"
+array_tool = "1.0.3"
+closure = "0.3.0"
+libc = "0.2.77"
+seq_io= { git = "https://github.com/markschl/seq_io" }
+lzzzz = "0.7"
+xx-bloomfilter = "0.10.0"
+flate2 = "1.0.6"
+thread-id = "3.3.0"
+#rust-seq2kminmers = { git = "https://github.com/rchikhi/rust-seq2kminmers" }
+rust-seq2kminmers = { path = "/home/baris/rust-seq2kminmers" }
+rust-parallelfastx = { git = "https://github.com/rchikhi/rust-parallelfastx"  }
+fxhash = "0.2.1"
+chrono = "0.4.22"
+nthash = "*"
+
+[target.'cfg(not(target_env = "msvc"))'.dependencies]
+tikv-jemallocator = "0.5"
+
+[profile.dev]
+opt-level = 3
